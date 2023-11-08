@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // function foo() {
+        //     x = 1;
+        //     function x() { }
+        //     var x = '2';
+        //     return x;
+        // }
+        // alert(typeof foo());//String coz we reintialize data to variable
+
+        // function foo() {
+        //     return x;
+        //     x = 1;
+
+        //     function x() { }
+
+        //     var x = '2';
+        // }
+        // console.log(typeof foo());//function..if we write print statement to func call then it will give undefied in this case we didnt print
+
+        var x = 1;
+        function foo() 
+        {
+             x = 10;
+             return;
+              function x() 
+              { } 
+        } 
+        foo();
+        console.log(x);//10 beacause there is no print statement to print return value of function
+
+        for(let s of articles)
+        {
+            console.log(s.innerHTML)
+        }
+        
+
+    </script>
+</body>
+
+</html>
