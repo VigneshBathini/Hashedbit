@@ -82,20 +82,22 @@
         // findTax(10000000)
 
         let num1 = '23';
-        let n1=num1.split();
+        let n1=num1.split('');
+        console.log(n1)//2nd digit//3
 
         let num2= '45';
-        let n2=num2.split();
+        let n2=num2.split('');
 
         function calculate()
         {
             let result;
             
             //result = ((num1%10)*(num2%10))+(parseInt(num1/10)*parseInt(num2/10))
-            result = n1[0]
-            console.log(result)
+             result = (n1[0]*n2[0])+(n1[1]*n2[1])
+            
+            console.log(result);
         }
-        calculate(num1,num2)
+        calculate(n1,n2)
 
         console.log(parseInt(100))
 
