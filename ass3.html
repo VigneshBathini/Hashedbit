@@ -9,7 +9,7 @@
 
 <body>
     <p>
-    <!-- Q1) Create an array of states in india.
+        <!-- Q1) Create an array of states in india.
     Remove all the names starting with vowels from the list. Use array.filter.
 
 
@@ -114,44 +114,118 @@
     }
     ]
     Write code to find average as mentioned above. Use array and object methods.</p> -->
-    <script>
+        <script>
 
-        // let states =['Telangana','UP','MH','Kerala','Tamil Nadu']
+            // let states =['Telangana','UP','MH','Kerala','Tamil Nadu']
 
-        // s = states.filter(x=>{
-        //     if(x[0]==('A'||'E'||'U'))
-        //     {
-        //         return x;
-        //     }
-        // }
-        // ,0,states )
-        //  console.log(s)
+            // s = states.filter(x=>{
+            //     if(x[0]==('A'||'E'||'U'))
+            //     {
+            //         return x;
+            //     }
+            // }
+            // ,0,states )
+            //  console.log(s)
 
-    //     Q2) let str = 'I love my India'
-    // output expected = 'India my love I'
-    // Write code for this.
+            //     Q2) let str = 'I love my India'
+            // output expected = 'India my love I'
+            // Write code for this.
 
-    let str ='I love my India'
-    let str1=str.split(' ');
-    console.log(str1)
-    st=str1[0]
-    str1[0]=str1[str1.length-1]
-    str1[str1.length-1]=st
-    console.log(str1)
+            // let str ='I love my India'
+            // let str1=str.split(' ');
+            // console.log(str1)
+            // st=str1[0]
+            // str1[0]=str1[str1.length-1]
+            // str1[str1.length-1]=st
+            // console.log(str1)
 
-    // Q3) let string = 'INDIA'
-    // output = 'INDONESIA'
-    // Use array.splice
+            // Q3) let string = 'INDIA'
+            // output = 'INDONESIA'
+            // Use array.splice
 
-    let s = 'INDIA'
-    let st1=s.split('');
-    console.log(st1)
+            // let s = 'INDIA'
+            // let st1=s.split('');
+            // console.log(st1)
 
-    console.log(st1.splice(3,0,'ONES'));
-    console.log(st1)
-    let ab=st1.join('');
-    console.log(ab)
-    </script>
+            // console.log(st1.splice(3,0,'ONES'));
+            // console.log(st1)
+            // let ab=st1.join('');
+            // console.log(ab)
+
+            // Q4) Take any string with minimum 20 characters. 
+            //Count number of consonant and vowel in the string.
+
+            // function countConsonantsAndVowels(str) {
+            //     str = str.toLowerCase();
+            //     const vowels = ['a', 'e', 'i', 'o', 'u'];
+            //     const consonants = 'bcdfghjklmnpqrstvwxyz';
+
+            //     let vowelCount = 0;
+            //     let consonantCount = 0;
+
+            //     for (let char of str) {
+            //         if (vowels.includes(char)) {
+            //             vowelCount++;
+            //         } else if (consonants.includes(char)) {
+            //             consonantCount++;
+            //         }
+            //     }
+            //     console.log('Vowels: ' + vowelCount);
+            //     console.log('Consonants: ' + consonantCount);
+            // }
+            // countConsonantsAndVowels("vigneshbathinisrishaila,")
+
+            // Q5) Write a function to replace wrong word with correct word in any sentance.
+            // Like this - correctfn(string, wrong, correct)
+            // Use string.replace in function.
+
+            // function correctFn(stri, wrong, correct) {
+            //     let newStr = stri.replace(wrong, correct)
+            //     console.log(newStr)
+            // }
+            // correctFn("Hashedbit inn", "inn", "innovation")
+
+            // Q6) inputArr = [1, 2, 3, 9, 10, 7, 5, 4, 3]
+            // answer = [9, 10, 7]
+            // User array.filter and return numbers greater than 5.
+
+            // let inputArr = [1, 2, 3, 9, 10, 7, 5, 4, 3]
+
+            // let newArr = inputArr.filter(x => {
+            //     return x > 5;
+            // })
+            // console.log(newArr)
+
+
+            // Q7)
+            // const students = [
+            //     { name: "Ram", scores: [80, 70, 60] },
+            //     { name: "Mohan", scores: [80, 70, 90] },
+            //     { name: "Sai", scores: [60, 70, 80] },
+            //     { name: "Hemang", scores: [90, 90, 80, 80] },
+            // ];
+            // Output = [
+            //     { name: "Ram", average: 70 },
+            //     { name: "Mohan", average: 80 },
+            //     { name: "Sai", average: 70 },
+            //     { name: "Hemang", average: 85 },
+            // ];
+            // Use array.map and array.reduce.
+
+            const students = [
+                 { name: "Ram", scores: [80, 70, 60] },
+                 { name: "Mohan", scores: [80, 70, 90] },
+                 { name: "Sai", scores: [60, 70, 80] },
+                 { name: "Hemang", scores: [90, 90, 80, 80] },
+             ];
+
+            students.map(function f1()
+            {
+                console.log(students.scores>=70);
+            })
+            
+
+        </script>
 </body>
 
 </html>
