@@ -117,14 +117,18 @@
         <script>
 
             // let states =['Telangana','UP','MH','Kerala','Tamil Nadu']
-
+            // vowels=['A','E','I','O','U']
             // s = states.filter(x=>{
-            //     if(x[0]==('A'||'E'||'U'))
+            //     console.log(x[0])
+
+            //     if(!vowels.includes(x[0]))
             //     {
+            //         console.log(x[0])
             //         return x;
             //     }
             // }
-            // ,0,states )
+            // )
+            // // ,0,states )
             //  console.log(s)
 
             //     Q2) let str = 'I love my India'
@@ -137,7 +141,8 @@
             // st=str1[0]
             // str1[0]=str1[str1.length-1]
             // str1[str1.length-1]=st
-            // console.log(str1)
+            // console.log(str1.join(' '))
+
 
             // Q3) let string = 'INDIA'
             // output = 'INDONESIA'
@@ -212,19 +217,169 @@
             // ];
             // Use array.map and array.reduce.
 
-            const students = [
-                 { name: "Ram", scores: [80, 70, 60] },
-                 { name: "Mohan", scores: [80, 70, 90] },
-                 { name: "Sai", scores: [60, 70, 80] },
-                 { name: "Hemang", scores: [90, 90, 80, 80] },
-             ];
+            // let students = [
+            //     { name: "Ram", scores: [80, 70, 60] },
+            //     { name: "Mohan", scores: [80, 70, 90] },
+            //     { name: "Sai", scores: [60, 70, 80] },
+            //     { name: "Hemang", scores: [90, 90, 80, 80] },
+            // ];
 
-            students.map(function f1()
-            {
-                console.log(students.scores>=70);
-            })
-            
+            // let f = students.map(function f1(x,z) {
+            //     // console.log(x.scores)
+               
+            //     return x.scores.reduce(
+            //         (p, q) => {
+            //             return p + q / x.scores.length;
 
+            //         }, 0
+            //     );
+            // })
+
+
+           
+
+            // Q8) Write a function to find repeated sum of digits until there is only a single digit
+            //  in the number.
+            //     Example - 456 - 4 + 5 + 6 = 15 - 1 + 5 = 6.
+            // function sumOfdigits(x)
+            // {
+            //     let sum=0;
+            //     let x1 = x.toString();
+            //     console.log(x1)
+            //     for(let i in x1)
+            //     {
+            //           sum+=x1[i]%10;
+            //     }
+            //     return sum;
+            // }
+            // console.log(sumOfdigits(456))
+
+            // Q9) Write a function to count the number of words in a paragraph.
+
+            //  function countWords(x)
+            //  {
+            //     let c=1;
+            //     x1=x.length-1;
+            //     console.log(x1)
+            //     if(x[0]==' ')
+            //     {
+            //         c--
+            //     }
+            //     for(let i in x)
+            //     {
+
+            //         if(x[i]==' ')
+            //         {
+            //             c++;
+            //         }
+
+            //     }
+
+            //     if(x[x1]==' ')
+            //     {
+            //         c--
+            //     }
+
+
+            //     console.log(c)
+            //  }
+            // countWords(" VIgnesh Ba thini hjgrf ") 
+            //if last or first char is space then it decrease count-1
+
+            // Q10) Write a function to reverse a string.
+            //     Input - Hello
+            // Outpur - olleH
+
+            // function toReverse(x)
+            // {
+
+            //     let s1=x.split("")
+            //     let rev =s1.reverse()
+            //     console.log(rev.join(""))
+
+            // }
+            // toReverse("Hello")
+
+            //         Q11)
+            // Input
+
+            // [
+            // student1: {
+            // subject1: 44,
+            // subject2: 56,
+            // subject3: 87,
+            // subject4: 97,
+            // subject5: 37
+            // },
+            // student2: {
+            // subject1: 44,
+            // subject2: 56,
+            // subject3: 87,
+            // subject4: 97,
+            // subject5: 37
+            // },
+            // student3: {
+            // subject1: 44,
+            // subject2: 56,
+            // subject3: 87,
+            // subject4: 97,
+            // subject5: 37
+            // }
+            // ]
+
+            // Output: -
+            // [
+            // student1: {
+            // average: 44
+            // },
+            // student2: {
+            // average: 44
+            // },
+            // student3: {
+            // average: 44
+            // }
+            // ]
+            // Write code to find average as mentioned above. Use array and object methods.</p> -->
+
+
+            // let input = [
+            //     {
+            //         student1: {
+            //             subject1: 44,
+            //             subject2: 56,
+            //             subject3: 87,
+            //             subject4: 97,
+            //             subject5: 37,
+            //         },
+            //     },
+            //     {
+            //         student2: {
+            //             subject1: 44,
+            //             subject2: 56,
+            //             subject3: 87,
+            //             subject4: 97,
+            //             subject5: 37,
+            //         },
+            //     },
+            //     {
+            //         student3: {
+            //             subject1: 44,
+            //             subject2: 56,
+            //             subject3: 87,
+            //             subject4: 97,
+            //             subject5: 37,
+            //         },
+            //     },
+            // ];
+
+            // let s = input.map((student) => {
+            //     let studentKey = Object.keys(student)[0];
+            //     let subjects = Object.values(student[studentKey]);
+            //     let average = subjects.reduce((sum, score) => (sum + score / subjects.length), 0);
+            //      return { [studentKey]: { average } };
+            // });
+
+            // console.log(s);
         </script>
 </body>
 
